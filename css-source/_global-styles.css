@@ -1,0 +1,341 @@
+/* Variables */
+:root {
+    --small-padding: 15px;
+}
+
+/* Global items and Spacing */
+.lean-template main section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.hello {
+    color: red;
+}
+
+.no-top-padding {
+    padding-top: 0px;
+}
+
+.no-bottom-padding {
+    padding-bottom: 0px;
+}
+
+.max-w {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.h-pad {
+    padding: 0 15px;
+}
+
+.lean-template .no-top-padding {
+    padding-top: 0px;
+}
+
+.lean-template .no-bottom-padding {
+    padding-bottom: 0px;
+}
+
+.lean-template .no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* ---------- Headings ------------ */
+
+.lean-template h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 90%;
+    letter-spacing: 0px;
+    color: #222222;
+}
+
+.lean-template h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #222222;
+}
+
+.lean-template h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 0px;
+    color: #222222;
+}
+
+.lean-template h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #222222;
+}
+
+.lean-template h5 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 175%;
+    letter-spacing: 0.08em;
+    color: #222222;
+}
+
+/* ---------- Paragraph text ------------ */
+
+.lean-template .paraSml p {
+    font-size: 14px;
+    font-weight: 400/700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+}
+
+.lean-template .paraMed p {
+    font-size: 16px;
+    font-weight: 400/700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+}
+
+.lean-template .paraLrg p {
+    font-size: 20px;
+    font-weight: 400/700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+}
+
+/* ---------- Quote text ------------ */
+
+.lean-template .quoteSml p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+    font-style: oblique;
+}
+
+.lean-template .quoteLrg p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0px;
+    color: #4A4A4A;
+    font-style: oblique;
+}
+
+@media screen and (min-width: 768px) {
+    .lean-template h1 {
+        font-size: 56px;
+    }
+
+    .lean-template h2 {
+        font-size: 40px
+    }
+
+    .lean-template .quoteLrg p {
+        font-size: 30px;
+    }
+
+    .lean-template .quoteSml p {
+        font-size: 20px;
+    }
+
+}
+
+
+/* Global Fonts */
+body {
+    font-family: 'TTNormsPro';
+    text-rendering: optimizeLegibility;
+    background-color: #f4f4f7;
+    font-display: swap;
+}
+
+#content {
+    background-color: #f4f4f7;
+}
+
+p {
+    line-height: 1.5;
+    font-family: 'TTNormsPro';
+    font-size: 20px;
+    margin: 0px;
+    color: #4A4A4A;
+}
+
+/* Cancel out Styling from Existing Page builders */
+a:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.lean-template main h5,
+p {
+    margin: 0px !important;
+}
+
+.site-inner {
+    padding-top: 0px !important;
+}
+
+.site-header .wrap {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.site-header>.wrap {
+    padding-bottom: 10px;
+}
+
+.wrap {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    max-width: none !important;
+}
+
+.footerSocials {
+    padding: 0px 15px;
+}
+
+.footerSocials-items {
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 30px
+}
+
+.footerSocials-item {
+    display: flex;
+}
+
+.footerSocials-item p {
+    font-size: 16px;
+    padding-bottom: 30px
+}
+
+
+@media only screen and (min-width: 540px) {
+    .h-pad {
+        padding: 0 30px;
+    }
+
+    /* .one-fourth {
+        width: 50% !important;
+    } */
+    .footerSocials-items {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* .one-fourth {
+        width: 25% !important;
+    } */
+	.site-header .wrap {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .site-header > .wrap {
+        padding-bottom: 30px;
+    }
+	.site-header .wrap {
+        padding-left: 50px !important;
+        padding-right: 30px !important;
+    }
+}
+
+
+/* --- Styling that is needed but was being injected directly into the header from old layout --------- */
+
+@font-face {
+    font-family: 'TTNormsPro';
+    src: url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Regular.woff2') format('woff2'), url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTNormsPro';
+    src: url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Bold.woff2') format('woff2'), url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTNormsPro';
+    src: url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Italic.woff2') format('woff2'), url('/wp-content/themes/academy-pro/fonts/TTNormsPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+.BambooHR-ATS-board ul ul {
+    padding: 16px 0px !important;
+    border-bottom: 0px !important;
+}
+
+.BambooHR-ATS-board li.BambooHR-ATS-Jobs-Item {
+    background-color: white;
+    padding: 8px 16px;
+    margin: 0 0 4px 0 !important;
+}
+
+
+li.BambooHR-ATS-Jobs-Item a {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.BambooHR-ATS-Department-Header {
+    font-size: 20px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.BambooHR-ATS-board .BambooHR-ATS-Location {
+    font-size: 20px;
+    color: #222;
+    padding-top: 4px !important;
+}
+
+.BambooHR-ATS-board>h2 {
+    display: none;
+}
+
+#BambooHR-Footer {
+    display: none !important;
+}
+
+.hs-error-msgs label {
+    color: #f2545b !important;
+    font-size: 15px;
+}
+
+.entry-content ul.hs-error-msgs>li {
+    list-style-type: none !important;
+}
